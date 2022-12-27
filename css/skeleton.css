@@ -144,10 +144,8 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
   h4 { font-size: 3.0rem; }
   h5 { font-size: 2.4rem; }
   h6 { font-size: 1.5rem; }
+  p  { font-size: 1.5rem; }
 }
-
-p {
-  margin-top: 0; }
 
 
 /* Links
@@ -345,7 +343,6 @@ blockquote,
 dl,
 figure,
 table,
-p,
 ul,
 ol,
 form {
@@ -387,7 +384,68 @@ hr {
   clear: both; }
 
 
-/* Clearing
+  /* img-error
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container-img{
+  width: 90vw;
+  margin: 0px auto;
+  display: none;
+}
+.container-img img{
+  width: 100%;
+}
+
+/* tarjetas
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container-card{
+display: flex;
+justify-content:center;
+flex-wrap:wrap;
+gap: 16px;
+}
+.tarjet{
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+width: auto;
+border: 1px solid lightgray;
+box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+border-radius:15px;
+}
+.tarjet img{
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+.title-card{
+font-size: 24px;
+padding: 10px ;
+text-align: center;
+}
+.body-card{
+padding: 5px;
+flex: 1 1 100%;
+}
+.body-card p{
+  padding: 0px!important;
+}
+.foo-card{
+background: #6699ff;
+border-radius:0 0 15px 15px;
+text-align:center; }
+
+.foo-card p :after {
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 1;
+content: ""
+}
+
+
+/* footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer{
   width: 100%;
